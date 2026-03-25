@@ -2,10 +2,80 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>МЕТРОНОМИКА</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="МЕТРОНОМИКА — аналитическая платформа для оценки новостроек Новой Москвы.">
+    <title>МЕТРОНОМИКА — аналитика новостроек</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>МЕТРОНОМИКА</h1>
-    <p>Аналитика новостроек Новой Москвы</p>
+    <header class="header" id="top">
+        <div class="container header__inner">
+            <a class="logo" href="#top" aria-label="МЕТРОНОМИКА — на главную">МЕТРОНОМИКА</a>
+            <button class="menu-toggle" type="button" aria-label="Открыть меню">☰</button>
+            <nav class="nav" aria-label="Главное меню">
+                <ul class="nav__list">
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#benefits">Преимущества</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <p class="hero__eyebrow">Платформа аналитики рынка</p>
+                <h1>Аналитика новостроек Новой Москвы в одном месте</h1>
+                <p class="hero__subtitle">
+                    Помогаем быстро оценивать объекты, сравнивать районы и принимать решения на основе данных.
+                </p>
+                <a class="button" href="#about">Узнать о проекте</a>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <h2>О проекте МЕТРОНОМИКА</h2>
+                <p>
+                    МЕТРОНОМИКА — это сервис для покупателей, инвесторов и специалистов рынка недвижимости.
+                    Мы собираем ключевые показатели по новостройкам Новой Москвы: цены, динамику, транспортную
+                    доступность и инфраструктуру. Благодаря понятной визуализации вы видите реальную картину рынка
+                    и можете действовать уверенно.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section--accent" id="benefits">
+            <div class="container">
+                <h2>Почему выбирают МЕТРОНОМИКУ</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Актуальные данные</h3>
+                        <p>Регулярно обновляем метрики по застройщикам, проектам и ценам.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Понятная аналитика</h3>
+                        <p>Наглядные показатели и сравнения без лишней сложности.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Экономия времени</h3>
+                        <p>Собираем информацию в одном месте, чтобы вы не тратили часы на поиск.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Фокус на Новой Москве</h3>
+                        <p>Глубокая экспертиза именно в том регионе, где сейчас высокий спрос.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer__inner">
+            <p>© 2026 МЕТРОНОМИКА</p>
+            <a href="mailto:info@metronomika.ru">info@metronomika.ru</a>
+        </div>
+    </footer>
 </body>
 </html>
