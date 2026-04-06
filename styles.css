@@ -150,6 +150,10 @@ h1 {
     margin-top: 28px;
 }
 
+.cards--dense .card {
+    padding: 20px 20px 16px;
+}
+
 .card {
     border: 1px solid var(--card-border);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
@@ -234,6 +238,34 @@ h1 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.metrics {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.metric {
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.metric__label {
+    margin: 0 0 4px;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--brand-2);
+}
+
+.metric__value {
+    margin: 0;
+    color: var(--text);
+    font-weight: 600;
+}
+
 .compare-grid {
     border: 1px solid var(--card-border);
     border-radius: var(--radius);
@@ -281,6 +313,32 @@ h1 {
     margin-top: 10px;
 }
 
+.insight-list--split {
+    columns: 2;
+    column-gap: 28px;
+}
+
+.insight-list--split li {
+    break-inside: avoid;
+}
+
+.mini-list {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--muted);
+}
+
+.mini-list li + li {
+    margin-top: 8px;
+}
+
+.action-buttons {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
 .button--ghost {
     background: transparent;
     color: var(--text);
@@ -289,6 +347,10 @@ h1 {
 }
 
 @media (max-width: 960px) {
+    .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .cards--three {
         grid-template-columns: 1fr;
     }
@@ -307,5 +369,15 @@ h1 {
 
     .compare-grid__row--head {
         display: none;
+    }
+
+    .insight-list--split {
+        columns: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .metrics {
+        grid-template-columns: 1fr;
     }
 }
